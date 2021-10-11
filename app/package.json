@@ -3,8 +3,8 @@
   "version": "1.0.0",
   "license": "ISC",
   "scripts": {
-    "start": "parcel src/index.html --open",
-    "build": "parcel build src/index.html --cache-dir .parcel-cache",
+    "start": "parcel src/index.html --cache-dir .parcel-cache --no-autoinstall",
+    "build": "parcel build src/index.html --cache-dir .parcel-cache --no-autoinstall",
     "clean": "rimraf dist && rimraf .parcel-cache",
     "serve": "http-server dist",
     "format": "prettier --write src/**/* -u --no-error-on-unmatched-pattern"
